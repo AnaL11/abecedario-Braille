@@ -8,19 +8,12 @@
   <h1>Letra A</h1>
   <p>Punto 1</p>
 
-  <!-- Audio -->
-  <audio id="audio" autoplay>
+  <!-- Audio manual -->
+  <audio id="audio">
     <source src="https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/audio/a.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
   </audio>
 
-  <script>
-    // Reproduce el audio automáticamente (autoplay puede fallar en móviles sin interacción)
-    window.onload = function () {
-      const audio = document.getElementById("audio");
-      audio.play().catch((e) => {
-        console.log("Autoplay bloqueado. Toca la pantalla para escuchar.");
-      });
-    };
-  </script>
+  <button onclick="document.getElementById('audio').play()">🔊 Escuchar</button>
 </body>
 </html>
