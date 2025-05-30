@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Letra A</title>
+</head>
+<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
+  <h1>Letra A</h1>
+  <p>Punto 1</p>
+
+  <!-- Audio -->
+  <audio id="audio" autoplay>
+    <source src="https://tuusuario.github.io/abecedario-braille/audio/a.mp3" type="audio/mpeg">
+    Tu navegador no soporta el audio.
+  </audio>
+
+  <script>
+    // Reproduce el audio automáticamente (autoplay puede fallar en móviles sin interacción)
+    window.onload = function () {
+      const audio = document.getElementById("audio");
+      audio.play().catch((e) => {
+        console.log("Autoplay bloqueado. Toca la pantalla para escuchar.");
+      });
+    };
+  </script>
+</body>
+</html>
