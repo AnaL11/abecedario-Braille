@@ -3,17 +3,54 @@
 <head>
   <meta charset="UTF-8">
   <title>Letra A</title>
+  <style>
+    body {
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff8dc;
+      margin-top: 50px;
+    }
+    h1 {
+      font-size: 60px;
+      color: #ff6347;
+    }
+    p {
+      font-size: 24px;
+      color: #444;
+    }
+    img {
+      width: 200px;
+      margin: 20px 0;
+      border-radius: 10px;
+    }
+    button {
+      font-size: 24px;
+      padding: 10px 20px;
+      background-color: #87ceeb;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4682b4;
+    }
+  </style>
 </head>
-<body style="text-align:center; font-family:sans-serif; margin-top:50px;">
+<body>
   <h1>Letra A</h1>
   <p>Punto 1</p>
 
-  <!-- Audio manual -->
+  <!-- Imagen desde GitHub -->
+  <img src="https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/imagenes/ABraille.webp" alt="Letra A en Braille">
+
+  <!-- Audio -->
   <audio id="audio">
     <source src="https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/audio/a.mp3" type="audio/mpeg">
     Tu navegador no soporta el elemento de audio.
   </audio>
 
+  <br><br>
   <button onclick="document.getElementById('audio').play()">🔊 Escuchar</button>
 </body>
 </html>
