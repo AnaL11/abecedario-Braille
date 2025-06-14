@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Letra C</title>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #f5fffa;
+    }
+    h1 {
+      font-size: 60px;
+      color: #32cd32;
+    }
+    p {
+      font-size: 24px;
+      color: #444;
+    }
+    img {
+      width: 200px;
+      margin: 10px 0;
+      border-radius: 10px;
+    }
+    button {
+      font-size: 24px;
+      padding: 20px 20px;
+      background-color: #ffb6c1;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #4682b4;
+    }
+  </style>
+</head>
+<body>
+  <h1>Letra C</h1>
+  <!-- Imagen desde GitHub -->
+  <img src="https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/imagenes/CBraille.webp" alt="Letra B en Braille">
+  <!-- Audio -->
+  <audio id="audio">
+    <source src="https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/audio/c.mp3" type="audio/mpeg">
+    Tu navegador no soporta el elemento de audio.
+  </audio>
+  <br><br>
+  <button onclick="document.getElementById('audio').play()">🔊 Escuchar</button>
+</body>
+</html>
