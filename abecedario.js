@@ -1,7 +1,7 @@
 const letras = [
   {
     id: "a",
-    etiqueta: "Letrasssss A",
+    etiqueta: "Letra A",
     color: "#ff6347",
     imagen: "https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/imagenes/ABraille.webp",
     audio: "https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/audio/a.mp3"
