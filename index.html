@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abecedario Braille</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <div class="shape shape1"></div>
+  <div class="shape shape2"></div>
+  <div class="shape shape3"></div>
+  <div class="shape shape4"></div>
+  <div class="main-content">
+    <div class="letter-card">
+      <h1 class="letter-name" id="letter-name"></h1>
+      <div class="braille-container">
+        <img id="braille-img" class="braille-image" src="" alt="">
+      </div>
+      <audio id="audio">
+        <source id="audio-src" src="" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
+      <button class="play-button" onclick="document.getElementById('audio').play()">
+        <span class="sound-icon">🔊</span>
+        <span>Escuchar</span>
+      </button>
+    </div>
+  </div>
+  <script src="abecedario.js"></script>
+</body>
+</html>
