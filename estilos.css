@@ -1,7 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
   min-height: 100vh;
-  font-family: 'Comic Sans MS', cursive, sans-serif;
+  font-family: 'Calibri', sans-serif;
   background: radial-gradient(circle at 20% 80%, #ff9a9e 0%, #fecfef 50%, #fecfef 100%),
               radial-gradient(circle at 80% 20%, #a8edea 0%, #fed6e3 50%, #fed6e3 100%),
               radial-gradient(circle at 40% 40%, #ffecd2 0%, #fcb69f 50%, #fcb69f 100%);
