@@ -193,8 +193,8 @@ const letras = [
 function getLetterFromQuery() {
   const params = new URLSearchParams(window.location.search);
   const letra = params.get('letra');
-  if (letra && /^[a-z]$/.test(letra)) {
-    return letra;
+  if (letra && /^[a-zñ]$/i.test(letra)) { // acepta letras de la a a la z y la ñ (mayúsculas y minúsculas)
+    return letra.toLowerCase();
   }
   return "a";
 }
