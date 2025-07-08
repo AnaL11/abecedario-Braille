@@ -37,23 +37,26 @@ body {
   margin: 0 auto;
   transition: max-width 0.2s, padding 0.2s;
 }
-.letter-card::before {
-  content: '';
-  position: absolute;
-  top: -50%; left: -50%;
-  width: 200%; height: 200%;
-  background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
-  transform: rotate(45deg);
-  animation: shimmer 3s infinite;
-  z-index: 1;
-  pointer-events: none;
-}
-@keyframes shimmer {
-  0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
-  100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
-}
+/* Elimina o comenta este bloque para quitar el efecto de luz */
+// .letter-card::before {
+//   content: '';
+//   position: absolute;
+//   top: -50%; left: -50%;
+//   width: 200%; height: 200%;
+//   background: linear-gradient(45deg, transparent, rgba(255,255,255,0.3), transparent);
+//   transform: rotate(45deg);
+//   animation: shimmer 3s infinite;
+//   z-index: 1;
+//   pointer-events: none;
+// }
+
+// También puedes eliminar la animación si no se usa en otro lugar
+// @keyframes shimmer {
+//   0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+//   100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
+// }
 h1 {
-  font-size: 60px; font-weight: bold; color: #ff6347; margin: 0 0 8px 0;
+  font-size: 100px; font-weight: bold; color: #ff6347; margin: 0 0 8px 0;
   text-shadow: 4px 4px 8px rgba(0,0,0,0.2);
   transform: perspective(500px) rotateX(15deg);
   position: relative; z-index: 2;
