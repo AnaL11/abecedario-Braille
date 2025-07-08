@@ -53,7 +53,7 @@ body {
   100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
 }
 h1 {
-  font-size: 44px; font-weight: bold; color: #ff6347; margin: 0 0 8px 0;
+  font-size: 60px; font-weight: bold; color: #ff6347; margin: 0 0 8px 0;
   text-shadow: 4px 4px 8px rgba(0,0,0,0.2);
   transform: perspective(500px) rotateX(15deg);
   position: relative; z-index: 2;
@@ -81,7 +81,7 @@ h1 {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   border: none; border-radius: 25px; padding: 14px 28px;
   font-size: 22px; font-weight: bold; color: white; cursor: pointer;
-  font-family: 'Comic Sans MS', cursive;
+  font-family: 'Calibri', sans-serif;
   box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
   transition: all 0.3s ease; margin-top: 18px; position: relative; overflow: hidden;
   z-index: 2;
