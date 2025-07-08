@@ -69,9 +69,12 @@ h1 {
   line-height: 1;
 }
 .letter-name {
-  font-size: 26px; color: #2c3e50; margin: 24px 0; font-weight: bold;
-  text-transform: uppercase; letter-spacing: 2px;
-  word-break: break-word;
+  font-size: 42px; /* antes 26px */
+  color: #2c3e50;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 24px 0;
 }
 .braille-container { margin: 14px 0; position: relative; }
 .braille-image {
