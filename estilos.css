@@ -65,14 +65,16 @@ body {
 
 /* Nombre dinámico de la letra */
 .letter-name {
-  font-size: 120px;
+  font-size: 8rem;            /* Más grande (equivale a 128px) */
   color: #28a745;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  margin: 24px 0;
+  margin: 1.5rem 0;           /* Más espaciamiento */
+  text-align: center;         /* Centrado */
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
+
 
 /* Imagen del Braille */
 .braille-container {
