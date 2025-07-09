@@ -7,26 +7,47 @@
   <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-  <div class="shape shape1"></div>
-  <div class="shape shape2"></div>
-  <div class="shape shape3"></div>
-  <div class="shape shape4"></div>
-  <div class="main-content">
+
+  <!-- Región de encabezado -->
+  <header>
+    <h1>Abecedario en Braille Interactivo</h1>
+  </header>
+
+  <!-- Región principal -->
+  <main class="main-content">
     <div class="letter-card">
-      <h1 class="letter-name" id="letter-name"></h1>
+      
+      <!-- Nombre de la letra como encabezado -->
+      <h2 class="letter-name" id="letter-name" aria-live="polite">Letra</h2>
+
+      <!-- Imagen Braille con texto alternativo -->
       <div class="braille-container">
-        <img id="braille-img" class="braille-image" src="" alt="">
+        <img id="braille-img" class="braille-image" src="" alt="Representación en Braille de la letra">
       </div>
-      <audio id="audio">
-        <source id="audio-src" src="" type="audio/mpeg">
-        Tu navegador no soporta el elemento de audio.
-      </audio>
-      <button class="play-button" onclick="document.getElementById('audio').play()">
-        <span class="sound-icon">🔊</span>
+
+      <!-- Reproductor de audio accesible -->
+      <section aria-labelledby="audio-label">
+        <h3 id="audio-label" class="sr-only">Audio de la letra seleccionada</h3>
+        <audio id="audio" controls>
+          <source id="audio-src" src="" type="audio/mpeg">
+          Tu navegador no soporta el elemento de audio.
+        </audio>
+      </section>
+
+      <!-- Botón accesible para escuchar -->
+      <button class="play-button" onclick="document.getElementById('audio').play()" aria-label="Reproducir audio de la letra">
+        <span class="sound-icon" aria-hidden="true">🔊</span>
         <span>Escuchar</span>
       </button>
+
     </div>
-  </div>
+  </main>
+
+  <!-- Región de pie de página -->
+  <footer>
+    <p>&copy; 2025 Proyecto Educativo Braille</p>
+  </footer>
+
   <script src="abecedario.js"></script>
 </body>
 </html>
