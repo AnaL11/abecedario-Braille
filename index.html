@@ -5,64 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abecedario Braille</title>
   <link rel="stylesheet" href="estilos.css">
-  <style>
-    /* Clase oculta solo para accesibilidad */
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-  </style>
 </head>
 <body>
+  <!-- Figuras decorativas (opcional) -->
+  <div class="shape shape1" aria-hidden="true"></div>
+  <div class="shape shape2" aria-hidden="true"></div>
+  <div class="shape shape3" aria-hidden="true"></div>
+  <div class="shape shape4" aria-hidden="true"></div>
 
-  <!-- Encabezado oculto para accesibilidad -->
+  <!-- Encabezado oculto pero accesible -->
   <header>
-    <h1 class="sr-only">Abecedario en Braille Interactivo</h1>
+    <h1 class="sr-only">Abecedario Braille Interactivo</h1>
   </header>
 
   <!-- Contenido principal -->
-  <main class="main-content">
+  <main class="main-content" role="main">
     <div class="letter-card">
-      <!-- Letra seleccionada -->
-      <h2 class="letter-name" id="letter-name" aria-live="polite">Letra</h2>
+      <!-- Letra visible -->
+      <h2 id="letter-name">A</h2>
 
-      <!-- Imagen de Braille -->
+      <!-- Imagen del Braille con descripción -->
       <div class="braille-container">
-        <img id="braille-img" class="braille-image" src="" alt="Letra en Braille">
+        <img id="braille-img" class="braille-image" src="https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/imagenes/ABraille.png" alt="Letra A en Braille">
       </div>
 
-      <!-- Región accesible para lectores de pantalla -->
-<h1 class="sr-only">Abecedario Braille</h1>
+      <!-- Reproductor de audio oculto -->
+      <audio id="audio" aria-hidden="true">
+        <source id="audio-src" src="https://raw.githubusercontent.com/AnaL11/abecedario-Braille/main/audio/a.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+      </audio>
 
-<!-- Imagen Braille + letra -->
-<h2 id="letter-name">Ñ</h2>
-<img id="braille-img" class="braille-image" src="..." alt="Letra Ñ en Braille">
+      <!-- Botón accesible -->
+      <button class="play-button"
+              onclick="document.getElementById('audio').play()"
+              aria-label="Reproducir audio de la letra A">
+        <span class="sound-icon" aria-hidden="true">🔊</span>
+        <span>Escuchar</span>
+      </button>
+    </div>
+  </main>
 
-<!-- Elemento de audio oculto pero accesible -->
-<audio id="audio" aria-hidden="true">
-  <source id="audio-src" src="..." type="audio/mpeg">
-  Tu navegador no soporta el elemento de audio.
-</audio>
-
-<!-- Botón visible, correctamente etiquetado -->
-<button class="play-button" onclick="document.getElementById('audio').play()" aria-label="Reproducir audio de la letra Ñ">
-  <span class="sound-icon" aria-hidden="true">🔊</span>
-  <span>Escuchar</span>
-</button>
-
-
-  <!-- Pie de página opcional -->
+  <!-- Pie de página accesible -->
   <footer>
-    <p class="sr-only">© 2025 Proyecto Educativo Braille</p>
+    <p class="sr-only">© 2025 Proyecto Educativo Abecedario Braille</p>
   </footer>
 
+  <!-- Script -->
   <script src="abecedario.js"></script>
 </body>
 </html>
