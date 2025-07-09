@@ -38,22 +38,25 @@
         <img id="braille-img" class="braille-image" src="" alt="Letra en Braille">
       </div>
 
-      <!-- Sección de audio accesible -->
-      <section aria-labelledby="audio-label">
-        <h3 id="audio-label" class="sr-only">Audio de la letra seleccionada</h3>
-        <audio id="audio" controls>
-          <source id="audio-src" src="" type="audio/mpeg">
-          Tu navegador no soporta el elemento de audio.
-        </audio>
-      </section>
+      <!-- Región accesible para lectores de pantalla -->
+<h1 class="sr-only">Abecedario Braille</h1>
 
-      <!-- Botón para activar el audio manualmente -->
-      <button class="play-button" onclick="document.getElementById('audio').play()" aria-label="Reproducir audio de la letra">
-        <span class="sound-icon" aria-hidden="true">🔊</span>
-        <span>Escuchar</span>
-      </button>
-    </div>
-  </main>
+<!-- Imagen Braille + letra -->
+<h2 id="letter-name">Ñ</h2>
+<img id="braille-img" class="braille-image" src="..." alt="Letra Ñ en Braille">
+
+<!-- Elemento de audio oculto pero accesible -->
+<audio id="audio" aria-hidden="true">
+  <source id="audio-src" src="..." type="audio/mpeg">
+  Tu navegador no soporta el elemento de audio.
+</audio>
+
+<!-- Botón visible, correctamente etiquetado -->
+<button class="play-button" onclick="document.getElementById('audio').play()" aria-label="Reproducir audio de la letra Ñ">
+  <span class="sound-icon" aria-hidden="true">🔊</span>
+  <span>Escuchar</span>
+</button>
+
 
   <!-- Pie de página opcional -->
   <footer>
