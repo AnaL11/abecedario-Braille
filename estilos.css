@@ -63,13 +63,15 @@ h1 {
   line-height: 1;
 }
 
+/* 👇 ESTA ES LA LETRA GRANDE (Ej: C) */
 .letter-name {
-  font-size: 42px;
-  color: #2c3e50;
+  font-size: 80px;
+  color: #28a745;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   margin: 24px 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .braille-container {
@@ -151,6 +153,7 @@ h1 {
   100% { transform: scale(1); }
 }
 
+/* 📱 Estilos para móviles */
 @media (max-width: 600px) {
   .main-content {
     padding: 0;
@@ -169,6 +172,7 @@ h1 {
     margin: 10px 0 16px 0;
     padding: 6px 0 4px 0;
     border-bottom-width: 2px;
+    color: #28a745;
   }
   .play-button {
     font-size: 4.5vw;
@@ -193,8 +197,6 @@ h1 {
     font-size: 6vw;
   }
   .letter-name {
-    font-size: 12vw;
+    font-size: 14vw;
   }
 }
-
-
