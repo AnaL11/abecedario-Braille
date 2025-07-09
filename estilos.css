@@ -153,5 +153,19 @@ h1 {
   100% { transform: scale(1); }
 }
 
-/* 📱 Para móviles */
-@media (max-width
+@media (max-width: 600px) {
+  .letter-card {
+    padding: 16px 4vw 18px 4vw;
+    max-width: 90vw;
+    border-radius: 18px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+    min-height: auto; /* 👈 Esto es lo nuevo */
+  }
+
+  .letter-name {
+    font-size: 20vw;
+    margin: 10px 0 16px 0;
+    padding: 6px 0 4px 0;
+    color: #28a745;
+  }
+}
