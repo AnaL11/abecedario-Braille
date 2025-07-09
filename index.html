@@ -5,27 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abecedario Braille</title>
   <link rel="stylesheet" href="estilos.css">
+  <style>
+    /* Clase oculta solo para accesibilidad */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Región de encabezado -->
+  <!-- Encabezado oculto para accesibilidad -->
   <header>
-    <h1 class="encabezado-pequeno">Abecedario en Braille</h1>
+    <h1 class="sr-only">Abecedario en Braille Interactivo</h1>
   </header>
 
-  <!-- Región principal -->
+  <!-- Contenido principal -->
   <main class="main-content">
     <div class="letter-card">
-      
-      <!-- Nombre de la letra como encabezado -->
+      <!-- Letra seleccionada -->
       <h2 class="letter-name" id="letter-name" aria-live="polite">Letra</h2>
 
-      <!-- Imagen Braille con texto alternativo -->
+      <!-- Imagen de Braille -->
       <div class="braille-container">
-        <img id="braille-img" class="braille-image" src="" alt="Representación en Braille de la letra">
+        <img id="braille-img" class="braille-image" src="" alt="Letra en Braille">
       </div>
 
-      <!-- Reproductor de audio accesible -->
+      <!-- Sección de audio accesible -->
       <section aria-labelledby="audio-label">
         <h3 id="audio-label" class="sr-only">Audio de la letra seleccionada</h3>
         <audio id="audio" controls>
@@ -34,18 +47,17 @@
         </audio>
       </section>
 
-      <!-- Botón accesible para escuchar -->
+      <!-- Botón para activar el audio manualmente -->
       <button class="play-button" onclick="document.getElementById('audio').play()" aria-label="Reproducir audio de la letra">
         <span class="sound-icon" aria-hidden="true">🔊</span>
         <span>Escuchar</span>
       </button>
-
     </div>
   </main>
 
-  <!-- Región de pie de página -->
+  <!-- Pie de página opcional -->
   <footer>
-    <p>&copy; 2025 Proyecto Educativo Braille</p>
+    <p class="sr-only">© 2025 Proyecto Educativo Braille</p>
   </footer>
 
   <script src="abecedario.js"></script>
