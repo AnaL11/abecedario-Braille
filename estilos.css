@@ -63,9 +63,9 @@ h1 {
   line-height: 1;
 }
 
-/* 👇 ESTA ES LA LETRA GRANDE (Ej: C) */
+/* 💥 LETRA GRANDE (Ej: C) */
 .letter-name {
-  font-size: 80px;
+  font-size: 120px;
   color: #28a745;
   font-weight: bold;
   text-transform: uppercase;
@@ -153,50 +153,5 @@ h1 {
   100% { transform: scale(1); }
 }
 
-/* 📱 Estilos para móviles */
-@media (max-width: 600px) {
-  .main-content {
-    padding: 0;
-  }
-  .letter-card {
-    padding: 16px 4vw 18px 4vw;
-    max-width: 90vw;
-    border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.13);
-  }
-  h1 {
-    font-size: 8vw;
-  }
-  .letter-name {
-    font-size: 16vw;
-    margin: 10px 0 16px 0;
-    padding: 6px 0 4px 0;
-    border-bottom-width: 2px;
-    color: #28a745;
-  }
-  .play-button {
-    font-size: 4.5vw;
-    padding: 3vw 4vw;
-  }
-  .braille-image {
-    width: 60vw;
-  }
-  .shape1, .shape2, .shape3, .shape4 {
-    opacity: 0.10;
-  }
-  .braille-container {
-    margin: 8px 0;
-  }
-}
-
-@media (max-width: 350px) {
-  .letter-card {
-    padding: 6px 1vw 10px 1vw;
-  }
-  h1 {
-    font-size: 6vw;
-  }
-  .letter-name {
-    font-size: 14vw;
-  }
-}
+/* 📱 Para móviles */
+@media (max-width
