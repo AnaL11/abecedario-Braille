@@ -210,6 +210,8 @@ function renderLetra(id) {
   document.getElementById('braille-img').alt = `${data.etiqueta} en Braille`;
   document.getElementById('audio-src').src = data.audio;
   document.getElementById('audio').load();
+  document.querySelector('.play-button').setAttribute('aria-label', `Reproducir audio de la letra ${data.etiqueta}`);
+
 }
 
 window.addEventListener('DOMContentLoaded', () => {
